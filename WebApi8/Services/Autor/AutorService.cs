@@ -64,7 +64,6 @@ namespace WebApi8.Services.Autor
         }
 
 
-
         public async Task<ResponseModel<List<AutorModel>>> ListarAutores()
         {
             ResponseModel<List<AutorModel>> resposta = new ResponseModel<List<AutorModel>>();
