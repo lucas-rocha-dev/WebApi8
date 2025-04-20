@@ -1,3 +1,3 @@
-# WebApi8
+# WebApi8_Biblioteca
 
-API criada utilizando .NET
+API criada utilizando .NET, dados manupulaveis no SQL.
