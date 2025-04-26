@@ -11,7 +11,7 @@ namespace WebApi8.Data
 
         }
 
-        public DbSet<Models.AutorModel> Autores { get; set; }
-        public DbSet<Models.LivroModel> Livros { get; set; }
+        public virtual DbSet<Models.AutorModel> Autores { get; set; }
+        public virtual DbSet<Models.LivroModel> Livros { get; set; }
     }
 }

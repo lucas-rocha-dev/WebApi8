@@ -25,6 +25,7 @@ namespace WebApi8.Services.Livro
                     .Include(a => a.Autor)
                     .FirstOrDefaultAsync(livroBanco => livroBanco.Id == idLivro);
                 if (livro == null) {
+                    resposta.Status = false;
                     resposta.Mensagem = "Nenhum registro localizado!";
                     return resposta;
                 }

@@ -22,6 +22,7 @@ namespace WebApi8.Services.Autor
             {
                 var autor = await _context.Autores.FirstOrDefaultAsync(autorBanco => autorBanco.Id == idAutor);
                 if (autor == null) {
+                    resposta.Status = false;
                     resposta.Mensagem = "Nenhum registro localizado!";
                     return resposta;
                 }
